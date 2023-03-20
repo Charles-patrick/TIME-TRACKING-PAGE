@@ -1,0 +1,741 @@
+body{
+    height: 100%;
+    padding: 100px 15%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: hsl(226, 43%, 10%);
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    grid-gap: 1.5em;
+}
+
+.box1 {
+    grid-row: 1/3;
+}
+.main-upper {
+    background-color: hsl(235, 46%, 20%);   
+}
+
+.main-upper section {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    height: 70%;
+    padding: 40px 25px;
+}
+.main-lower{
+    background-color: hsl(235, 46%, 20%);
+    height: 30%;
+    border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    
+}
+.main-lower .cont {
+    padding-top: 6%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.button {
+    width: 100%;    
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 25px;
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+    color: hsl(236, 75%, 70%);
+}
+
+.button:hover {
+    transition-duration: 0.2s;
+    background-color:hsl(239, 41%, 24%);
+    transform: translate(0 ,2px);
+}
+
+.bold{
+    font-weight: bolder;
+}
+.active-btn{
+    color: white;
+    background-color: hsl(239, 41%, 24%);
+}
+
+
+
+
+.main-upper .main-upper-text {
+    padding-top: 15px;
+}
+.main-upper section h1{
+   font-size: 45px;
+   font-weight: 300;
+   margin-top: -5%;
+   color: white;
+}
+.main-upper section p {
+    color: hsl(236, 100%, 87%);
+}
+.main-upper .avatar-img img{
+    border: solid 5px white;
+    border-radius: 50%;
+    width: 35%;
+    
+}
+.work{
+    background-color: hsl(15, 100%, 70%);
+}
+.play {
+    background-color: hsl(195, 74%, 62%);
+}
+.study{
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+}
+.upper-box {
+    height: 40%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.upper-box svg {
+    float: right;
+    margin-right: 5%;
+}
+.lower-box{
+    position: relative;
+    top: -25%;
+    height: 80%;
+    background-color: hsl(235, 46%, 20%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.lower-box section {
+    
+    padding: 20px 20px;
+}
+.lower-box .header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.lower-box button {
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+}
+.lower-box button svg{
+    padding-bottom: 5px;
+}
+.lower-box button:hover {
+    cursor: pointer;
+}
+.lower-box .hours{
+    color: white;
+    font-size: 51px;
+    margin: 30px auto 0 auto;
+    font-weight: 200;
+}
+.lower-box .last-week {
+    color: hsl(236, 100%, 87%);
+    margin: 5px auto;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 990px)  {
+body {
+    padding: 100px 10%;
+    }
+}
+@media only screen and (max-width: 990px) and (min-width: 750px) {
+.wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+        grid-gap: 2em;
+    }
+body {
+    padding: 150px 10%;
+}
+.lower-box {
+    height: 70%;
+    top: 0;
+}
+.upper-box {
+    height: 30%;
+}
+}
+@media only screen and (max-width: 750px) and (min-width: 645px) {
+.wrapper {
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5em;
+    }
+
+}
+@media only screen and (max-width: 644px) and (min-width: 491px) {
+body {
+        padding: 100px 5%;
+    }
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+}
+
+@media only screen and (max-width: 490px) and (min-width: 391px) {
+.button {
+    width: 32%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5px 3px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.main-upper section {
+    display: flex;
+    padding: 20px 15px;
+}
+
+.main-upper section h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -11px;
+    margin-left: 7px;
+}
+
+.main-upper section p {
+    font-size: 14px;
+    margin-left: 7px;
+}
+
+.main-upper .avatar-img img {
+    border: solid 2px white;
+    border-radius: 50%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-upper .avatar-img {
+    /* border: solid 1px white; */
+    width: 25%;
+    height: 10%;
+    position: relative;
+    top: 25px;
+}
+
+.main-lower {
+    background-color: hsl(235, 46%, 20%);
+    height: 35%;
+
+}
+.box3 {
+    margin-top: -50px;
+    height: 90%;
+}
+
+.box4 {
+    margin-top: -110px;
+    height: 90%;
+}
+
+.box5 {
+    /* exercise */
+    margin-top: -180px;
+    height: 85%;
+}
+
+.box6 {
+    /* social */
+    margin-top: -250px;
+    height: 90%;
+}
+
+.box7 {
+    margin-top: -340px;
+    height: 90%;
+}
+
+.mid {
+    display: flex;
+}
+
+.lower-box {
+    position: relative;
+    top: -25%;
+    height: 60%;
+}
+
+.lower-box .hours {
+    font-size: 35px;
+    margin: 20px auto 5px -5px;
+    font-weight: 200;
+}
+
+.lower-box .last-week {
+    margin: 35px -2px 5px auto;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.upper-box {
+    height: 40%;
+}
+
+
+body {
+    padding: 50px 10%;
+}
+
+.box1 {
+    grid-row: 1;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+    height: 1000px;
+}
+}
+@media only screen and (max-width: 390px) and (min-width: 314px) {
+.button {
+    width: 32%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5px 3px;
+    margin: 10px auto ;
+    border-radius: 5px;
+    }
+.main-upper section {
+    display: flex;
+    padding: 20px 15px;
+}
+.main-upper section h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -11px;
+    margin-left: 7px;
+}
+.main-upper section p {
+    font-size: 14px;
+    margin-left: 7px;
+}
+
+.main-upper .avatar-img img {
+    border: solid 2px white;
+    border-radius: 50%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main-upper .avatar-img {
+    /* border: solid 1px white; */
+    width: 25%;
+    height: 10%;
+    position: relative;
+    top: 25px;
+}
+    
+.main-lower {
+    background-color: hsl(235, 46%, 20%);
+    height: 35%;
+
+}
+.mid{
+    display: flex;
+}
+.lower-box {
+    position: relative;
+    top: -25%;
+    height: 60%;
+}
+.lower-box .hours {
+    font-size:35px;
+    margin: 20px auto 5px -5px;
+    font-weight: 200;
+}
+
+.lower-box .last-week {
+    margin: 35px -2px 5px auto ;
+    font-weight: 200;
+    font-size: 15px;
+}
+.upper-box {
+    height: 40%;
+}
+
+
+body {
+    padding: 100px 5%;
+}
+.box1 {
+    grid-row: 1;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+}
+}
+@media only screen and (max-width: 313px) and (min-width: 300px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2em;
+        height: 1000px;
+    }
+.button {
+    width: 32%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5px 3px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.main-upper section {
+    display: flex;
+    padding: 20px 15px;
+}
+
+.main-upper section h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -11px;
+    margin-left: 7px;
+}
+
+.main-upper section p {
+    font-size: 14px;
+    margin-left: 7px;
+}
+
+.main-upper .avatar-img img {
+    border: solid 2px white;
+    border-radius: 50%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-upper .avatar-img {
+    /* border: solid 1px white; */
+    width: 25%;
+    height: 10%;
+    position: relative;
+    top: 25px;
+}
+
+.main-lower {
+    background-color: hsl(235, 46%, 20%);
+    height: 35%;
+
+}
+
+.mid {
+    display: flex;
+}
+
+.lower-box {
+    position: relative;
+    top: -25%;
+    height: 35%;
+}
+.work-lower-box {
+    height: 45%;
+}
+
+
+.box2 {
+    margin-top: -40px;
+}
+
+.box3 {
+    margin-top: -110px;
+}
+.box4{
+    margin-top: -160px;
+}
+.box5 {
+    /* exercise */
+    margin-top: -200px;
+    height: 145%;
+}
+.box6 {
+    /* social */
+    margin-top: -270px;
+    height: 145%;
+}
+.box7 {
+    margin-top: -340px;
+    height: 145%;
+}
+
+
+.lower-box .hours {
+    font-size: 30px;
+    margin: 20px auto 5px -5px;
+    font-weight: 200;
+}
+
+
+.lower-box .last-week {
+    margin: 30px -2px 5px auto;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.upper-box {
+    height: 40%;
+}
+
+
+body {
+    padding: 50px 5%;
+}
+
+.box1 {
+    grid-row: 1;
+}
+}
+@media only screen and (max-width: 299px) and (min-width: 279px) {
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+    height: 1000px;
+}
+
+.button {
+    width: 32%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5px 3px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.main-upper section {
+    display: flex;
+    padding: 20px 15px;
+}
+
+.main-upper section h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -11px;
+    margin-left: 7px;
+}
+
+.main-upper section p {
+    font-size: 14px;
+    margin-left: 7px;
+}
+
+.main-upper .avatar-img img {
+    border: solid 2px white;
+    border-radius: 50%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-upper .avatar-img {
+    /* border: solid 1px white; */
+    width: 25%;
+    height: 10%;
+    position: relative;
+    top: 25px;
+}
+
+.main-lower {
+    background-color: hsl(235, 46%, 20%);
+    height: 35%;
+
+}
+
+.mid {
+    display: flex;
+}
+
+.lower-box {
+    position: relative;
+    top: -25%;
+    height: 35%;
+}
+.work-lower-box {
+    height: 45%;
+}
+
+
+.box2 {
+    margin-top: -40px;
+}
+
+.box3 {
+    margin-top: -110px;
+}
+
+.box4 {
+    margin-top: -160px;
+}
+
+.box5 {
+    /* exercise */
+    margin-top: -200px;
+    height: 145%;
+}
+
+.box6 {
+    /* social */
+    margin-top: -270px;
+    height: 145%;
+}
+
+.box7 {
+    margin-top: -340px;
+    height: 145%;
+}
+
+.lower-box .hours {
+    font-size: 25px;
+    margin: 25px auto 5px -5px;
+    font-weight: 200;
+}
+
+.lower-box .last-week {
+    margin: 33px -2px 5px auto;
+    font-weight: 150;
+    font-size: 14px;
+}
+
+
+.upper-box {
+    height: 40%;
+}
+
+
+body {
+    padding: 50px 5%;
+}
+
+.box1 {
+    grid-row: 1;
+}
+}
+@media only screen and (max-width: 278px) and (min-width: 0px) {
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+    height: 1000px;
+}
+.button {
+    width: 31%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5px 3px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.main-upper section {
+    display: flex;
+    padding: 20px 15px;
+}
+.main-upper section h1 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: -11px;
+    margin-left: 7px;
+}
+.main-upper section p {
+    font-size: 13px;
+    margin-left: 7px;
+}
+.main-upper .avatar-img img {
+    border: solid 2px white;
+    border-radius: 50%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main-upper .avatar-img {
+    /* border: solid 1px white; */
+    width: 25%;
+    height: 10%;
+    position: relative;
+    top: 25px;
+}
+.main-lower {
+    background-color: hsl(235, 46%, 20%);
+    height: 35%;
+}
+.mid {
+    display: flex;
+}
+.lower-box {
+    position: relative;
+    top: -25%;
+    height: 35%;
+}
+.work-lower-box {
+    height: 45%;
+}
+.box2 {
+    margin-top: -40px;
+}
+.box3 {
+    margin-top: -110px;
+}
+.box4 {
+    margin-top: -160px;
+}
+.box5 {
+    /* exercise */
+    margin-top: -200px;
+    height: 145%;
+}
+.box6 {
+    /* social */
+    margin-top: -270px;
+    height: 145%;
+}
+.box7 {
+    margin-top: -340px;
+    height: 145%;
+}
+.lower-box .hours {
+    font-size: 20px;
+    margin: 25px auto 5px -5px;
+    font-weight: 200;
+}
+.lower-box .last-week {
+    margin: 30px -2px 5px auto;
+    font-weight: 150;
+    font-size: 14px;
+}
+.upper-box {
+    height: 40%;
+}
+body {
+    padding: 50px 5%;
+}
+.box1 {
+    grid-row: 1;
+}
+}
